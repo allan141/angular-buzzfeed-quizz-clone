@@ -1,12 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-  padding:0;
-  margin:0;
-  border:0;
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
   box-sizing: border-box;
-  color:antiquewhite;
+  font-family: 'Arial', sans-serif;
 }
 
-body{
+body {
   background-color: #1F1147;
+  color: antiquewhite;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #FF2E63;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.card {
+  background: #28204E;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  font-size: 22px;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: #FF2E63;
+  color: #FFF;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #F0134D;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .card {
+    padding: 15px;
+  }
 }
